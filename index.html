@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVSEO - خدمات SMM و Servers و Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+        
+        .tagline {
+            text-align: center;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .services {
+            background: white;
+            padding: 60px 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .service-card ul li {
+            padding: 8px 0;
+            padding-right: 20px;
+            position: relative;
+        }
+        
+        .service-card ul li:before {
+            content: "✓";
+            position: absolute;
+            right: 0;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .features {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-box {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 60px 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-info {
+            font-size: 1.2em;
+            margin-top: 30px;
+        }
+        
+        .contact-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        
+        .contact-button:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .services-grid, .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">SERVSEO</div>
+            <p class="tagline">حلولك الشاملة للتسويق الرقمي</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>🚀 نقدم لك أفضل خدمات التسويق الرقمي</h1>
+            <p>SMM • Servers • Media - كل ما تحتاجه في مكان واحد</p>
+            <a href="#contact" class="cta-button">ابدأ الآن</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">📦 خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📱 SMM Services</h3>
+                    <p>خدمات التواصل الاجتماعي الاحترافية</p>
+                    <ul>
+                        <li>متابعين حقيقيين</li>
+                        <li>لايكات وتفاعل</li>
+                        <li>مشاهدات الفيديو</li>
+                        <li>تعليقات ومشاركات</li>
+                        <li>جميع المنصات</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🖥️ Server Solutions</h3>
+                    <p>سيرفرات قوية وموثوقة</p>
+                    <ul>
+                        <li>VPS & Dedicated Servers</li>
+                        <li>سيرفرات ألعاب</li>
+                        <li>استضافة مواقع</li>
+                        <li>حماية DDoS</li>
+                        <li>دعم فني 24/7</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🎬 Media Services</h3>
+                    <p>خدمات الميديا الاحترافية</p>
+                    <ul>
+                        <li>تصميم جرافيك</li>
+                        <li>مونتاج فيديو</li>
+                        <li>صناعة المحتوى</li>
+                        <li>إعلانات ممولة</li>
+                        <li>إدارة حسابات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">⭐ لماذا SERVSEO؟</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">⚡</div>
+                    <h3>سرعة التنفيذ</h3>
+                    <p>خدمات فورية وتسليم سريع</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💎</div>
+                    <h3>جودة عالية</h3>
+                    <p>نضمن لك أفضل النتائج</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💰</div>
+                    <h3>أسعار تنافسية</h3>
+                    <p>أفضل الأسعار في السوق</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🔒</div>
+                    <h3>أمان وخصوصية</h3>
+                    <p>حماية كاملة لبياناتك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">📞 تواصل معنا</h2>
+            <div class="contact-info">
+                <p>📧 Email: info@servseo.com</p>
+                <p>💬 Telegram: @servseo</p>
+                <p>📱 WhatsApp: +XXX XXX XXXX</p>
+            </div>
+            <a href="https://t.me/yourusername" class="contact-button">تواصل عبر Telegram</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SERVSEO - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+</body>
+</html>
